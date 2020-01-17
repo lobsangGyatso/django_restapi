@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<form action="{% url 'employee' %}" method="post">
+  {% csrf_token %}
+<input type="text" name="name" value="" placeholder="name">
+<br>
+<input type="text" name="email" value="" placeholder="email">
+<br>
+<input type="number" name="age" value="" placeholder="age">
+<br>
+<br>
+<input type="number" name="address" value="" placeholder="address">
+<input type="submit" name="" value="Save">
+</form>
+  </body>
+</html>
